@@ -1,0 +1,78 @@
+body {
+  width: 100vw;
+    height: 100vh;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  background-image: url('./img/background_img.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+img{
+  display: block;
+  width: 100%;
+  height: 100%;
+object-fit: cover
+}
+.container {
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1220px;
+}
+.modal {
+  position: fixed;
+  width: 1220px;
+  overflow: hidden;
+}
+.close_button {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  z-index: 9999;
+}
+.cup {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(100%);
+}
+
+.confetti {
+  display: block;
+  transform: translateY(100%);
+}
+
+.funs_left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-49%, -49%);
+  z-index: 20;
+}
+
+.funs_right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 20;
+  transform: translate(52%, 52%);
+}
+
+.title_one {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(110%,25%);
+  opacity: 0;
+/* transform: translate(-100%, 50%); */
+/* transform: translate(110%, 50%); */
+  z-index: 25;
+}
