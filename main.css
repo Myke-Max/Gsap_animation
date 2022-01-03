@@ -8,7 +8,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 img {
@@ -93,11 +93,7 @@ img {
   opacity: 0;
 }
 
-.final_result{
-  position: absolute;
-  z-index: 26;
-  opacity: 0;
-}
+
 
 .label_left{
   width: 1000px;
@@ -116,11 +112,12 @@ img {
   z-index: 27;
 }
 
+
 .final_result{
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 28;
+  z-index: 19;
   opacity: 0;
 }
 
