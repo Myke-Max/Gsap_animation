@@ -129,6 +129,7 @@ img {
 
 
 .funs_left {
+  width: 100vw;
   position: absolute;
   top: 0;
   left: 0;
@@ -137,6 +138,7 @@ img {
 }
 
 .funs_right {
+  width: 100vw;
   position: absolute;
   right: 0;
   bottom: 0;
@@ -204,6 +206,8 @@ img {
 
 
 .final_result{
+  width: 100vw;
+  
   position: absolute;
   top: 0;
   left: 0;
