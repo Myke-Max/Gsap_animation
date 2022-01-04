@@ -1,3 +1,8 @@
+:root {
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --animation-duration: 250ms;
+}
+/* GLOBAL CLASSES */
 body {
   width: 100vw;
   height: 100vh;
@@ -8,7 +13,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0;
-  /* overflow-x: hidden; */
 }
 
 img {
@@ -18,12 +22,15 @@ img {
   object-fit: cover;
 }
 .container {
-  /* padding-left: 30px;
-  padding-right: 30px; */
+  width: 1220px;
   margin-left: auto;
   margin-right: auto;
-  width: 1220px;
 }
+
+
+
+/* ANIMATION WINDOW */
+
 .modal {
   display: block;
   position: fixed;
@@ -31,27 +38,80 @@ img {
   overflow: hidden;
 }
 
-.close{
+.close {
   display: none;
 }
+
 .close_button {
-  width: 15px;
-  height: 20px;
   position: absolute;
   top: 10px;
   right: 20px;
   z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  transition: background-color var(--animation-duration) var(--timing-function);
+  background-image: url('./img/cloese_icon.png');
+  background-position: center;
+  background-size: 60%;
+  background-repeat: no-repeat;
 }
+
+.close_button:hover,
+.close_button:focus {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 
 .content_button{
-width: 15px;
-  height: 20px;
   position: absolute;
-  top: 50px;
-  right: 50px;
-  z-index: 1000;
+  top: 10%;
+  right: 30%;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  transition: background-color var(--animation-duration) var(--timing-function);
+  background-image: url('./img/watch_tv.png');
+  background-position: center;
+  background-size: 60%;
+  background-repeat: no-repeat;
+}
+.watch_tv_button{
+  position: absolute;
+  top: 16%;
+  right: 28%;
+  z-index: 20;
+  text-transform: uppercase;
+  color: #fff;
 }
 
+.content_button:hover,
+.content_button:focus {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* ANIMATION SLIDES*/
 .cup {
   display: block;
   position: absolute;
@@ -60,10 +120,13 @@ width: 15px;
   transform: translateY(100%);
 }
 
-.confetti {
-  display: block;
-  transform: translateY(100%);
+.confetti{
+  width: 100vw;
+   display: block;
+    transform: translateY(-100%);
 }
+
+
 
 .funs_left {
   position: absolute;
@@ -75,8 +138,8 @@ width: 15px;
 
 .funs_right {
   position: absolute;
-  bottom: 0;
   right: 0;
+  bottom: 0;
   z-index: 20;
   transform: translateX(100%);
 }
@@ -85,7 +148,6 @@ width: 15px;
   position: absolute;
   top: 5%;
   left: 20%;
-  /* transform: translate(110%, 25%); */
   opacity: 0;
   z-index: 24;
 }
@@ -150,8 +212,9 @@ width: 15px;
 }
 
 
-/* Lightbox */
+/* Lightbox for Video content */
 .lightbox {
+ 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -180,7 +243,9 @@ width: 15px;
 }
 
 .lightbox__content {
+   position: relative;
   transform: scale(0.95);
+  transition: transform var(--animation-duration) var(--timing-function);
 }
 
 .lightbox.is-open .lightbox__content {
@@ -197,8 +262,8 @@ width: 15px;
 
 .lightbox__button {
   position: absolute;
-  top: 100px;
-  right: 340px;
+  top: -28px;
+  right: -30px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -211,8 +276,8 @@ width: 15px;
   background-color: transparent;
   color: #fff;
   cursor: pointer;
-  transition: background-color var(--animation-duration) var(--timing-function);
   outline: none;
+  transition: background-color var(--animation-duration) var(--timing-function);
   background-image: url('./img/cloese_icon.png');
   background-position: center;
   background-size: 60%;

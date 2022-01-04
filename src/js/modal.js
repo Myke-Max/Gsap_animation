@@ -1,13 +1,6 @@
-const refs = {
-  openModal: document.querySelector('.js-lightbox'),
-  backdrop: document.querySelector('.lightbox__overlay'),
-  iframe: document.querySelector('.iframe'),
-  modalCloseBtn: document.querySelector('.lightbox__button'),
-  linkButton: document.querySelector('.content_button'),
-  modal_animation: document.querySelector('.modal'),
-  close_button: document.querySelector('.close_button'),
-};
-export default function openModal(e) {
+import refs from './refs.js';
+
+function openModal(e) {
   if (e.target.nodeName !== 'BUTTON') {
     return;
   }
@@ -19,7 +12,7 @@ export default function openModal(e) {
 }
 const onCloseModal = () => {
   refs.openModal.classList.remove('is-open');
-  refs.iframe.src = '';
+  videoStopper('videoContainer');
 };
 const onEscClose = e => {
   if (e.code === 'Escape') {
@@ -35,6 +28,15 @@ const onBackDropClose = e => {
 
 const onCloseAnimation = () => {
   refs.modal_animation.classList.add('close');
+};
+
+let videoStopper = function (id) {
+  let containerElement = document.getElementById(id);
+  let iframe_tag = containerElement.querySelector('iframe');
+  if (iframe_tag) {
+    let iframeSrc = iframe_tag.src;
+    iframe_tag.src = iframeSrc;
+  }
 };
 refs.linkButton.addEventListener('click', openModal);
 refs.close_button.addEventListener('click', onCloseAnimation);

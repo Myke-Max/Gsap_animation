@@ -10,75 +10,78 @@
       integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
       crossorigin="anonymous"
     />
-    <!-- <link rel="stylesheet" href="dist/basicLightbox.min.css"> -->
-    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./src/style.css" />
 
     <title>Funs club</title>
   </head>
+
   <body>
     <div class="modal container">
       <button class="close_button"></button>
-      <button class="content_button"></button>
 
       <div class="cup">
-        <img src="./img/cup.png" alt="" width="1280" />
+        <img src="./src/img/cup.png" alt="" width="1280" />
       </div>
-
       <div class="confetti">
-        <img src="./img/confetti.png" alt="" width="1280" />
+        <img src="./src/img/confetti_up.png" alt="" width="1280" />
       </div>
 
       <div class="funs_left">
-        <img src="./img/funs_left.png" alt="" />
+        <img src="./src/img/funs_left.png" alt="" />
       </div>
 
       <div class="funs_right">
-        <img src="./img/funs_right.png" alt="" />
+        <img src="./src/img/funs_right.png" alt="" />
       </div>
 
       <div class="title_one">
-        <img src="./img/one.png" alt="" />
+        <img src="./src/img/one.png" alt="" />
       </div>
       <div class="title_game">
-        <img src="./img/one_game.png" alt="" />
+        <img src="./src/img/one_game.png" alt="" />
       </div>
       <div class="title_glory">
-        <img src="./img/one_game_to_glory.png" alt="" />
+        <img src="./src/img/one_game_to_glory.png" alt="" />
       </div>
 
       <div class="team_left">
-        <img src="./img/team_left.png" alt="" />
+        <img src="./src/img/team_left.png" alt="" />
       </div>
 
       <div class="team_right">
-        <img src="./img/team_right.png" alt="" />
+        <img src="./src/img/team_right.png" alt="" />
       </div>
 
       <div class="label_left">
-        <img src="./img/logo_left_s.png" alt="" />
+        <img src="./src/img/logo_left_s.png" alt="" />
       </div>
 
       <div class="label_right">
-        <img src="./img/logo_right_s.png" alt="" />
+        <img src="./src/img/logo_right_s.png" alt="" />
       </div>
 
       <div class="final_result">
-        <img src="./img/final_cup.png" alt="" />
+        <button class="content_button"></button>
+        <p class="watch_tv_button">watch tv spot</p>
+        <img src="./src/img/final_cup.png" alt="" />
       </div>
-    <!-- lightbox -->
+      <!-- lightbox -->
     </div>
     <div class="lightbox js-lightbox">
       <div class="lightbox__overlay"></div>
-    
-      <div class="lightbox__content">
-        <iframe class="iframe" src="https://www.youtube.com/embed/E1oZhEIrer4" width="560" height="315" frameborder="0"></iframe>
+
+      <div class="lightbox__content" id="videoContainer">
+        <button type="button" class="lightbox__button" data-action="close-lightbox"></button>
+        <iframe
+          src="https://drive.google.com/file/d/1WccgYH7ngfW-Vt-fJ5Yru-6ooezw6klr/preview"
+          width="560"
+          height="315"
+          allow="autoplay"
+        ></iframe>
       </div>
-    
-      <button type="button" class="lightbox__button" data-action="close-lightbox"></button>
-    </div>;
-    <script type="module" src="./js/modal.js"></script>
-    <!-- <script src="dist/basicLightbox.min.js"></script> -->
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-    <script src="./js/gsap_animation.js"></script>
+    <script src="./src/js/modal.js" type="module"></script>
+    <script src="./src/js/gsap_animation.js" type="module"></script>
   </body>
 </html>
