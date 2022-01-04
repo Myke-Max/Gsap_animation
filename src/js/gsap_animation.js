@@ -1,4 +1,4 @@
-const animation = gsap.to('.cup', { duration: 3, y: '0%' });
+const animation = gsap.to('.cup', { duration: 3, y: '-6%' });
 gsap.to('.confetti', { duration: 3, delay: 2, ease: 'power3.out', y: '0%' });
 
 gsap.to('.funs_left', {
