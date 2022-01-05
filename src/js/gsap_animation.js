@@ -6,11 +6,9 @@ gsap.to('.funs_left', {
   delay: 3,
   ease: 'power1.out',
   keyframes: [
-    { x: '-80%' },
-    { x: '-60%' },
+    { x: '-70%' },
     { x: '-40%' },
-    { x: '-20%' },
-
+    { x: '-5%' },
     { x: '0%' },
     { x: '0%' },
     { x: '0%' },
@@ -18,8 +16,8 @@ gsap.to('.funs_left', {
     { x: '0%' },
     { x: '-30%' },
     { x: '-60%' },
-    { x: '-80%' },
-    { x: '-100%' },
+    { x: '-90%' },
+
     { zIndex: 0 },
   ],
 });
@@ -28,10 +26,9 @@ gsap.to('.funs_right', {
   delay: 3,
   ease: 'power1.out',
   keyframes: [
-    { x: '80%' },
-    { x: '60%' },
+    { x: '70%' },
     { x: '40%' },
-    { x: '20%' },
+    { x: '5%' },
     { x: '0%' },
     { x: '0%' },
     { x: '0%' },
@@ -39,15 +36,15 @@ gsap.to('.funs_right', {
     { x: '0%' },
     { x: '30%' },
     { x: '60%' },
-    { x: '80%' },
-    { x: '100%' },
+    { x: '90%' },
+
     { zIndex: 0 },
   ],
 });
 
 gsap.to('.title_one', {
   duration: 2,
-  delay: 6,
+  delay: 7,
   keyframes: [
     { opacity: 0.5 },
     { opacity: 0.7 },
@@ -60,7 +57,7 @@ gsap.to('.title_one', {
 });
 gsap.to('.title_game', {
   duration: 2,
-  delay: 7,
+  delay: 8,
   keyframes: [
     { opacity: 0.7 },
     { opacity: 1 },
@@ -71,20 +68,20 @@ gsap.to('.title_game', {
   ],
 });
 gsap.to('.title_glory', {
-  duration: 8,
-  delay: 8,
+  duration: 10,
+  delay: 9,
   keyframes: [
-    { opacity: 1 },
     { opacity: 1 },
     { opacity: 0.7 },
     { opacity: 0.5 },
+    { opacity: 0.3 },
     { opacity: 0 },
     { zIndex: 0 },
   ],
 });
 gsap.to('.team_left', {
   duration: 4,
-  delay: 8,
+  delay: 9,
   keyframes: [
     { opacity: 0.5 },
     { opacity: 0.7 },
@@ -97,7 +94,7 @@ gsap.to('.team_left', {
 });
 gsap.to('.team_right', {
   duration: 4,
-  delay: 8,
+  delay: 9,
   keyframes: [
     { opacity: 0.5 },
     { opacity: 0.7 },
@@ -111,7 +108,7 @@ gsap.to('.team_right', {
 
 gsap.to('.label_left', {
   duration: 4,
-  delay: 12,
+  delay: 12.6,
   keyframes: [
     { opacity: 0.2 },
     { opacity: 0.5 },
@@ -126,7 +123,7 @@ gsap.to('.label_left', {
 });
 gsap.to('.label_right', {
   duration: 4,
-  delay: 12,
+  delay: 12.6,
   keyframes: [
     { opacity: 0.2 },
     { opacity: 0.5 },
