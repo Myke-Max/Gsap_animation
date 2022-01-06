@@ -15,7 +15,7 @@ gsap.to('.funs_left', {
     { x: '0%' },
     { x: '0%' },
     { x: '-30%' },
-    { x: '-60%' },
+    { x: '-70%' },
     { x: '-90%' },
 
     { zIndex: 0 },
@@ -35,7 +35,7 @@ gsap.to('.funs_right', {
     { x: '0%' },
     { x: '0%' },
     { x: '30%' },
-    { x: '60%' },
+    { x: '70%' },
     { x: '90%' },
 
     { zIndex: 0 },
@@ -43,45 +43,68 @@ gsap.to('.funs_right', {
 });
 
 gsap.to('.title_one', {
-  duration: 2,
+  duration: 10,
   delay: 7,
+  ease: Power1.easeOut,
   keyframes: [
-    { opacity: 0.5 },
-    { opacity: 0.7 },
+    // { x: '0%' },
+    // { x: '20%' },
+    // { x: '40%' },
+    // { x: '60%' },
+    // { x: '80%' },
+    // { x: '100%' },
+    // { x: '120%' },
+    // { x: '140%' },
+    // { x: '160%' },
+    // { x: '180%' },
+    // { x: '200%' },
     { opacity: 1 },
-    { opacity: 0.7 },
-    { opacity: 0.5 },
     { opacity: 0 },
-    { zIndex: 0 },
   ],
 });
 gsap.to('.title_game', {
-  duration: 2,
-  delay: 8,
+  duration: 10,
+  delay: 7.5,
+  ease: Power1.easeOut,
   keyframes: [
-    { opacity: 0.7 },
+    // { x: '0%' },
+    // { x: '20%' },
+    // { x: '40%' },
+    // { x: '60%' },
+    // { x: '80%' },
+    // { x: '100%' },
+    // { x: '120%' },
+    // { x: '140%' },
+    // { x: '160%' },
+    // { x: '180%' },
+    // { x: '200%' },
     { opacity: 1 },
-    { opacity: 0.7 },
-    { opacity: 0.5 },
     { opacity: 0 },
-    { zIndex: 0 },
   ],
 });
 gsap.to('.title_glory', {
   duration: 10,
-  delay: 9,
+  delay: 8,
+  ease: Power1.easeOut,
   keyframes: [
+    // { x: '0%' },
+    // { x: '20%' },
+    // { x: '40%' },
+    // { x: '60%' },
+    // { x: '80%' },
+    // { x: '100%' },
+    // { x: '120%' },
+    // { x: '140%' },
+    // { x: '160%' },
+    // { x: '180%' },
+    // { x: '200%' },
     { opacity: 1 },
-    { opacity: 0.7 },
-    { opacity: 0.5 },
-    { opacity: 0.3 },
     { opacity: 0 },
-    { zIndex: 0 },
   ],
 });
 gsap.to('.team_left', {
   duration: 4,
-  delay: 9,
+  delay: 8,
   keyframes: [
     { opacity: 0.5 },
     { opacity: 0.7 },
@@ -94,7 +117,7 @@ gsap.to('.team_left', {
 });
 gsap.to('.team_right', {
   duration: 4,
-  delay: 9,
+  delay: 8,
   keyframes: [
     { opacity: 0.5 },
     { opacity: 0.7 },
