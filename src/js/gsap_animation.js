@@ -1,16 +1,14 @@
-const animation = gsap.to('.cup', { duration: 3, y: '-6%' });
-gsap.to('.confetti', { duration: 3, delay: 2, ease: 'power3.out', y: '0%' });
+const animation = gsap.to('.cup', { duration: 2, y: '-6%' });
+gsap.to('.confetti', { duration: 3, delay: 1, ease: 'power3.out', y: '0%' });
 
-gsap.to('.funs_left', {
-  duration: 28,
-  delay: 3,
+gsap.to('.fans_left', {
+  duration: 20,
+  delay: 1.5,
   ease: 'power1.out',
   keyframes: [
     { x: '-70%' },
     { x: '-40%' },
     { x: '-5%' },
-    { x: '0%' },
-    { x: '0%' },
     { x: '0%' },
     { x: '0%' },
     { x: '0%' },
@@ -21,16 +19,14 @@ gsap.to('.funs_left', {
     { zIndex: 0 },
   ],
 });
-gsap.to('.funs_right', {
-  duration: 28,
-  delay: 3,
+gsap.to('.fans_right', {
+  duration: 20,
+  delay: 1.5,
   ease: 'power1.out',
   keyframes: [
     { x: '70%' },
     { x: '40%' },
     { x: '5%' },
-    { x: '0%' },
-    { x: '0%' },
     { x: '0%' },
     { x: '0%' },
     { x: '0%' },
@@ -43,68 +39,27 @@ gsap.to('.funs_right', {
 });
 
 gsap.to('.title_one', {
-  duration: 10,
-  delay: 7,
+  duration: 6,
+  delay: 4,
   ease: Power1.easeOut,
-  keyframes: [
-    // { x: '0%' },
-    // { x: '20%' },
-    // { x: '40%' },
-    // { x: '60%' },
-    // { x: '80%' },
-    // { x: '100%' },
-    // { x: '120%' },
-    // { x: '140%' },
-    // { x: '160%' },
-    // { x: '180%' },
-    // { x: '200%' },
-    { opacity: 1 },
-    { opacity: 0 },
-  ],
+  keyframes: [{ opacity: 1 }, { opacity: 0 }],
 });
 gsap.to('.title_game', {
-  duration: 10,
-  delay: 7.5,
+  duration: 5,
+  delay: 4.5,
   ease: Power1.easeOut,
-  keyframes: [
-    // { x: '0%' },
-    // { x: '20%' },
-    // { x: '40%' },
-    // { x: '60%' },
-    // { x: '80%' },
-    // { x: '100%' },
-    // { x: '120%' },
-    // { x: '140%' },
-    // { x: '160%' },
-    // { x: '180%' },
-    // { x: '200%' },
-    { opacity: 1 },
-    { opacity: 0 },
-  ],
+  keyframes: [{ opacity: 1 }, { opacity: 0 }],
 });
 gsap.to('.title_glory', {
-  duration: 10,
-  delay: 8,
-  ease: Power1.easeOut,
-  keyframes: [
-    // { x: '0%' },
-    // { x: '20%' },
-    // { x: '40%' },
-    // { x: '60%' },
-    // { x: '80%' },
-    // { x: '100%' },
-    // { x: '120%' },
-    // { x: '140%' },
-    // { x: '160%' },
-    // { x: '180%' },
-    // { x: '200%' },
-    { opacity: 1 },
-    { opacity: 0 },
-  ],
-});
-gsap.to('.team_left', {
   duration: 4,
-  delay: 8,
+  delay: 5,
+  ease: Power1.easeOut,
+  keyframes: [{ opacity: 1 }, { opacity: 0 }],
+});
+
+gsap.to('.team_left', {
+  duration: 2.5,
+  delay: 5,
   keyframes: [
     { opacity: 0.5 },
     { opacity: 0.7 },
@@ -116,8 +71,8 @@ gsap.to('.team_left', {
   ],
 });
 gsap.to('.team_right', {
-  duration: 4,
-  delay: 8,
+  duration: 2.5,
+  delay: 5,
   keyframes: [
     { opacity: 0.5 },
     { opacity: 0.7 },
@@ -130,8 +85,8 @@ gsap.to('.team_right', {
 });
 
 gsap.to('.label_left', {
-  duration: 4,
-  delay: 12.6,
+  duration: 3,
+  delay: 7.2,
   keyframes: [
     { opacity: 0.2 },
     { opacity: 0.5 },
@@ -145,8 +100,8 @@ gsap.to('.label_left', {
   ],
 });
 gsap.to('.label_right', {
-  duration: 4,
-  delay: 12.6,
+  duration: 3,
+  delay: 7.2,
   keyframes: [
     { opacity: 0.2 },
     { opacity: 0.5 },
@@ -163,5 +118,5 @@ gsap.to('.label_right', {
 gsap.to('.final_result', {
   opacity: 1,
   duration: 1,
-  delay: 12,
+  delay: 7.7,
 });

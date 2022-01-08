@@ -128,7 +128,7 @@ img {
 
 
 
-.funs_left {
+.fans_left {
   width: 100vw;
   position: absolute;
   top: 0;
@@ -137,7 +137,7 @@ img {
   z-index: 20;
 }
 
-.funs_right {
+.fans_right {
   width: 100vw;
   position: absolute;
   right: 0;
@@ -220,6 +220,7 @@ img {
 
 
 /* Lightbox for Video content */
+
 .lightbox {
  
   display: flex;
