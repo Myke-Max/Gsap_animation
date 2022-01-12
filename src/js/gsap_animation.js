@@ -19,6 +19,7 @@ gsap.to('.fans_left', {
     { zIndex: 0 },
   ],
 });
+
 gsap.to('.fans_right', {
   duration: 20,
   delay: 1.5,

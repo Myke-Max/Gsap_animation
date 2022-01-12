@@ -6,8 +6,6 @@
 body {
   width: 100vw;
   height: 100vh;
-  background-size: 100%;
-  background-repeat: no-repeat;
   background-image: url('./img/background_img.png');
   background-position: center;
   background-size: cover;
@@ -26,8 +24,6 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-
-
 
 /* ANIMATION WINDOW */
 
@@ -72,8 +68,7 @@ img {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-
-.content_button{
+.content_button {
   position: absolute;
   top: 10%;
   right: 30%;
@@ -97,7 +92,7 @@ img {
   background-size: 60%;
   background-repeat: no-repeat;
 }
-.watch_tv_button{
+.watch_tv_button {
   position: absolute;
   top: 16%;
   right: 28%;
@@ -115,18 +110,15 @@ img {
 .cup {
   display: block;
   position: absolute;
-  top: 0;
-  left: 0;
+  bottom: 0;
   transform: translateY(100%);
 }
 
-.confetti{
+.confetti {
   width: 100vw;
-   display: block;
-    transform: translateY(-100%);
+  display: block;
+  transform: translateY(-100%);
 }
-
-
 
 .fans_left {
   width: 100vw;
@@ -154,19 +146,19 @@ img {
   opacity: 0;
   z-index: 24;
 }
-.title_game{
- position: absolute;
+.title_game {
+  position: absolute;
   top: 25%;
-   left: 50%;
+  left: 50%;
   transform: translateX(-50%);
   z-index: 24;
   opacity: 0;
 }
 
-.title_glory{
- position: absolute;
+.title_glory {
+  position: absolute;
   top: 36%;
-   left: 50%;
+  left: 50%;
   transform: translateX(-50%);
   z-index: 24;
   opacity: 0;
@@ -188,29 +180,25 @@ img {
   opacity: 0;
 }
 
-
-
-.label_left{
+.label_left {
   width: 1000px;
-   position: absolute;
+  position: absolute;
   top: 0;
   left: 0;
   opacity: 0;
   z-index: 27;
 }
-.label_right{
-   width: 1000px;
-   position: absolute;
+.label_right {
+  width: 1000px;
+  position: absolute;
   top: 0;
   right: 0;
   opacity: 0;
   z-index: 27;
 }
 
-
-.final_result{
+.final_result {
   width: 100vw;
-  
   position: absolute;
   top: 0;
   left: 0;
@@ -218,11 +206,9 @@ img {
   opacity: 0;
 }
 
-
 /* Lightbox for Video content */
 
 .lightbox {
- 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -251,8 +237,7 @@ img {
 }
 
 .lightbox__content {
-   position: relative;
-  transform: scale(0.95);
+  position: relative;
   transition: transform var(--animation-duration) var(--timing-function);
 }
 
@@ -296,5 +281,3 @@ img {
 .lightbox__button:focus {
   background-color: rgba(0, 0, 0, 0.5);
 }
-
-
